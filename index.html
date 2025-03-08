@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <div class="quotebox">
-        <h2>Quote of the day</h2>
-        <blockquote id="quote">Loading...</blockquote>
-        <span id="author">Loading...</span>
-        <div>
-            <button onclick="getquote(api_url)">New Quote</button>
-            <!-- <button>Tweet</button> -->
-        </div>
-    </div>
 
-    <script src="index.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Quotes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+  <div class="container">
+    <h1 id="heading">Quote of the Day</h1>
+    <div class="content">
+      <span class="fas fa-quote-left"></span>
+      <span id="quote">
+        All our talents increase in the using, and every faculty, both good and bad, strengthen by exercise.
+      </span>
+      <span class="fas fa-quote-right"></span>
+    </div>
+    <p id="author">-James</p>
+    <button id="getQuote">Generate</button>
+  </div>
+
+  <script src="index.js"></script>
+
 </body>
+
 </html>
